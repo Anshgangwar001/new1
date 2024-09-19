@@ -1,0 +1,127 @@
+/* Global Styles */
+html, body {
+   height: 100%;
+  
+  
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Dark background for the page */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* Form Container */
+.signup-form {
+  background-color: #1E1E2D; /* Dark background for the form */
+  color: #E0E0E0; /* Light text color */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
+  border: 1px solid #444; /* Subtle border for definition */
+  margin: 20px; /* Margin for spacing in smaller screens */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+}
+
+/* Add hover effect for the form container */
+.signup-form:hover {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+  transform: translateY(-5px); /* Lift the form slightly */
+}
+
+/* Header Style */
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00A6FF; /* Bright and professional blue */
+  font-size: 2rem; /* Larger size for emphasis */
+  font-weight: 600; /* Slightly bolder */
+  letter-spacing: 1px; /* Improve text legibility */
+}
+
+/* Form Group Style */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label Style */
+label {
+  display: block;
+  font-size: 1.1rem; /* Consistent font size */
+  margin-bottom: 8px;
+  color: #B2B2B2; /* Light grey for labels */
+}
+
+/* Input Field Style */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333; /* Darker border for input fields */
+  border-radius: 8px;
+  background-color: #2E2E3A; /* Slightly lighter than form background */
+  color: #E0E0E0;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.input-field:focus {
+  border-color: #00A6FF; /* Highlight border on focus */
+  background-color: #3A3A4A; /* Slightly lighter background on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Error Message Style */
+.error-message {
+  color: #FF6F61; /* Subtle red for errors */
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Submit Button Style */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #00A6FF; /* Vibrant blue for the button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem; /* Larger size for emphasis */
+  font-weight: 600; /* Slightly bolder */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.submit-btn:disabled {
+  background-color: #00A6FF; /* Darker shade when disabled */
+  cursor: not-allowed;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #007ACC; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.submit-btn:active:not(:disabled) {
+  background-color: #00A6FF; /* Even darker blue on active */
+  transform: translateY(1px); /* Slight depression effect */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .signup-form {
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Lighter shadow for smaller screens */
+  }
+
+  .signup-form h2 {
+      font-size: 1.5rem; /* Slightly smaller header on mobile */
+  }
+
+  label, .input-field, .submit-btn {
+      font-size: 1rem; /* Adjust font size for better readability */
+  }
+}

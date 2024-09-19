@@ -1,0 +1,111 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* Dark background for the entire page */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* Register Container */
+.register-container {
+  background-color: #1E1E2D; /* Dark background for the form */
+  color: #E0E0E0; /* Light text color */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
+  border: 1px solid #444; /* Subtle border for definition */
+  margin: 20px; /* Margin for spacing on smaller screens */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+}
+
+/* Hover effect for container */
+.register-container:hover {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Header Style */
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00A6FF; /* Bright and professional blue */
+  font-size: 2rem; /* Larger size for emphasis */
+  font-weight: 600; /* Slightly bolder */
+  letter-spacing: 1px; /* Enhanced spacing for readability */
+}
+
+/* Form Group */
+.form-group {
+   margin-bottom: 20px;
+}
+
+/* Label */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem; /* Consistent font size */
+  color: #B2B2B2; /* Light grey for labels */
+}
+
+/* Input Field Style */
+input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2E2E3A; /* Slightly lighter than the container background */
+  border: 1px solid #333;
+  color: #E0E0E0; /* Light text color */
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #00A6FF; /* Highlight border on focus */
+  background-color: #3A3A4A; /* Slightly lighter background on focus */
+}
+.error-message {
+  color: #FF6F61; /* Subtle red for errors */
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Button Style */
+/* Button Style */
+.btn {
+  width: 100%;
+  padding: 12px !important;
+  background-color: #00A6FF !important; /* Vibrant blue for the button */
+  color: #fff !important;
+  border: none;
+  border-radius: 8px !important;
+  font-size: 1.1rem !important; /* Larger size for emphasis */
+  font-weight: 600 !important; /* Slightly bolder */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transitions */
+}
+
+/* Button when disabled */
+.btn:disabled {
+  background-color: #00A6FF; /* Darker shade when disabled */
+  cursor: not-allowed;
+}
+
+/* Button hover effect (without changing the color) */
+.btn:hover:not(:disabled) {
+  background-color: #007ACC;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Button active (click) state */
+.btn:active:not(:disabled) {
+  background-color: #007ACC; /* Slightly darker blue on active (click) */
+  transform: translateY(1px); /* Slight depression effect */
+}
+

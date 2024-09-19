@@ -1,0 +1,116 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Dark background for the whole page */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* Form Container */
+.login-form {
+  background-color: #1A1A26; /* Darker form background for contrast */
+  color: #E0E0E0; /* Light text color */
+  padding: 40px;
+  border-radius: 16px; /* More rounded corners for a modern look */
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  border: none; /* Remove border for a cleaner look */
+}
+.login-form h2{
+  
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00A6FF; /* Bright and professional blue */
+  font-size: 2rem; /* Larger size for emphasis */
+  font-weight: 600; /* Slightly bolder */
+  letter-spacing: 1px; /* Improve text legibility */
+}
+/* Header Style */
+h2 {
+  text-align: center;
+  color: #00A6FF; /* Bright blue */
+  font-size: 2.2rem; /* Larger size for more prominence */
+  font-weight: 700; /* Bolder font for emphasis */
+  margin-bottom: 25px; /* More spacing for a balanced look */
+}
+
+/* Form Group Style */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Label Style */
+label {
+  display: block;
+  font-size: 1.2rem; /* Slightly larger labels for readability */
+  margin-bottom: 10px;
+  color: #B2B2B2; /* Light grey for labels */
+}
+
+/* Input Field Style */
+input {
+  width: 100%;
+  padding: 14px; /* Slightly more padding for larger input areas */
+  background-color: #2A2A37; /* Darker background for inputs */
+  color: #E0E0E0; /* Light text for contrast */
+  border: none;
+  border-radius: 10px; /* Rounded input fields */
+  font-size: 1.1rem; /* Larger font size for better readability */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Input Field Focus Style */
+input:focus {
+  outline: none;
+  border: 1px solid #00A6FF; /* Highlight border on focus */
+  background-color: #38384A; /* Slightly lighter background on focus */
+}
+
+/* Submit Button Style */
+.btn {
+  width: 100%;
+  padding: 12px !important;
+  background-color: #00A6FF !important; /* Vibrant blue for the button */
+  color: #fff !important;
+  border: none;
+  border-radius: 8px !important;
+  font-size: 1.1rem !important; /* Larger size for emphasis */
+  font-weight: 600 !important; /* Slightly bolder */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.btn:disabled {
+  background-color: #00A6FF; /* Darker shade when disabled */
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #007ACC; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.btn:active:not(:disabled) {
+  background-color: #00A6FF; /* Even darker blue on active */
+  transform: translateY(1px); /* Slight depression effect */
+}
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .login-form {
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Lighter shadow for smaller screens */
+  }
+
+  .login-form h2 {
+      font-size: 1.5rem; /* Slightly smaller header on mobile */
+  }
+
+  label, .input-field, .submit-btn {
+      font-size: 1rem; /* Adjust font size for better readability */
+  }
+}

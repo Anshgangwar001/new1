@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" height="1200px" width="1200px" viewbox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <title>Code Catalyst logo</title>
+  <style>
+    @font-face {
+      font-family: 'Victor Mono';
+      src: url('./VictorMono-VariableFont_wght.ttf') format('truetype');
+    }
+
+    .code-catalyst {
+      font-family: 'Victor Mono', monospace, sans-serif;
+      font-size: 125px;
+      fill: #5dacbd;
+      letter-spacing: 9px;
+    }
+  </style>
+  <defs>
+    <g id="cube">
+      <polygon points="100,20 170,60 170,140 100,180 30,140 30,60" style="fill:transparent;stroke:#5dacbd;stroke-width:10" />
+      
+      <line x1="100" y1="100" x2="100" y2="180" style="stroke:#5dacbd;stroke-width:10" />
+      <line x1="100" y1="100" x2="170" y2="60" style="stroke:#5dacbd;stroke-width:10" />
+      <line x1="100" y1="100" x2="30" y2="60" style="stroke:#5dacbd;stroke-width:10" />
+    </g>
+    <clipPath id="cubes">
+      <rect x="360" y="335" width="165" height="165" />
+      <rect x="670" y="335" width="165" height="165" />
+      <rect x="478" y="600" width="245" height="165" />
+    </clipPath>
+  </defs>
+  <polygon points="600,100 950,300 950,700 600,900 250,700 250,300" style="fill:transparent;stroke:#5dacbd;stroke-width:25" />
+  
+  <polygon points="600,300 775,400 775,600 600,700 425,600 425,400" style="fill:transparent;stroke:#5dacbd;stroke-width:10" clip-path="url(#cubes)" />
+  <use href="#cube" x="500" y="240" />
+  <use href="#cube" x="360" y="460" />
+  <use href="#cube" x="640" y="460" />
+
+  <text x="50" y="1100" class="code-catalyst" font-weight="550">Code Catalyst</text>
+</svg>

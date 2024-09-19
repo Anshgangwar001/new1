@@ -1,0 +1,128 @@
+/* General body styling */
+body {
+  background-color: #000000; /* Dark background */
+  color: #ffffff; /* White text for readability */
+  font-family: 'Arial', sans-serif; /* Example font */
+}
+
+/* Main container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Headline (Welcome to Code Catalyst) */
+.headline {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Empower your learning text styling */
+.subheadline {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #cccccc; /* Light gray for subtext */
+}
+
+/* Interactive Coding / Comprehensive Courses / Collaborative Learning Box */
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.box {
+  background-color: #1c1c1e; /* Muted dark gray */
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  color: #ffffff;
+  text-align: left;
+}
+
+.box-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.box-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Buttons for students, professors, and colleges */
+.button-container {
+  margin-top: 40px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.button-student {
+  background-color: #7f56d9; /* Purple */
+  color: #0b0808;
+}
+
+.button-professor {
+  background-color: #34c759; /* Green */
+  color: #ffffff;
+}
+
+.button-college {
+  background-color: #ff2d55; /* Pink */
+  color: #ffffff;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* For the interactive tabs */
+.tabs-container {
+  margin-top: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #2c2c2e;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-active {
+  background-color: #7f56d9; /* Active tab with purple background */
+  color: #ffffff;
+}
+
+.tab:hover {
+  background-color: #444446;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #1c1c1e;
+  color: #aaaaaa;
+  text-align: center;
+  font-size: 14px;
+}
+
